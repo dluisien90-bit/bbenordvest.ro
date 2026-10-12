@@ -213,7 +213,8 @@ a { color: inherit; }
 .domains__nr { flex: none; min-width: 2.2em; font-size: .875rem; font-weight: 600; letter-spacing: .14em; color: var(--blue); }
 
 /* Contact */
-.contact { display: grid; grid-template-columns: 1fr; margin-top: 36px; max-width: 520px; }
+.contact { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 36px; }
+@media (min-width: 860px) { .contact { grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 760px; } }
 .contact__item {
   display: flex; flex-direction: column; gap: 6px; padding: 22px 24px;
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none;
